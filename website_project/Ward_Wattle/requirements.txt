@@ -1,0 +1,13 @@
+# This file may be used to create an environment using:
+# $ conda create --name <env> --file <this file>
+# platform: win-64
+certifi=2018.10.15=py37_0
+django=2.1.2=py37_0
+pip=10.0.1=py37_0
+python=3.7.0=hea74fb7_0
+pytz=2018.5=py37_0
+setuptools=40.4.3=py37_0
+vc=14.1=h0510ff6_4
+vs2015_runtime=14.15.26706=h3a45250_0
+wheel=0.32.1=py37_0
+wincertstore=0.2=py37_0

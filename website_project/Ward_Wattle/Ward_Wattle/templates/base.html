@@ -1,0 +1,65 @@
+{% load static %}
+<html>
+<head>
+  <link rel="stylesheet" href="{% static 'css/base.css' %}">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+    <link rel="icon" href="static/css/icon.jpg" type="image/jpg/x-icon"/>
+</head>
+<header>
+  <div class='container'>
+    <div id='logo'><img src="{% static 'css/w1.jpg' %}" alt="logo"/>
+    <nav>
+      <ul>
+        <li><a href="{% url 'home' %}">Home</a></li>
+        <li><a href="{% url 'aboutus' %}"> About Us</a></li>
+        <li><a href="{% url 'email' %}"> Contact Us</a></li>
+      </ul>
+    </nav>
+	</div>
+  </div>
+</header>
+{% block content %}
+{% endblock %}
+<footer>
+	<div class='boxcontrol1'>
+		<table class ='t1'cellspacing="6" align = "right" >
+		<tr><th align='right'>Aaaa & Aaaaa</th></tr>
+		<tr>
+		<td align='center'>
+		<a href="{% url 'aboutus' %}"> About Us</a> <br>
+		<a href="{% url 'email' %}"> Contact Us</a>
+		</td>
+		</tr>
+		</table>
+	</div>
+	<div class='boxcontrol2'>
+		<table class='t2' align = "center">
+		<tr><th align='center'>Contact Us</th></tr>
+		<tr>
+		<td align='center'><img src="{% static 'css/loc.png' %}" alt="Location" height="25" width="25"/>
+		<span align='center'>-- -- -, ABCD ABC,<br>&nbsp;&nbsp;&nbsp;&nbsp;AB A------ B--<br>&nbsp;&nbsp;&nbsp;New Delhi - 1<br></span><br>
+		<img src="{% static 'css/mob.png' %}" alt="Mobile No." height="25" width="25" align='center'/>+91 750 35 28238 <br><br>
+		<img src="{% static 'css/msg.png' %}" alt="Email-ID" height="25" width="25" align='center'/>&nbsp;info@aaaaaaaaaa.com<br>
+		</td>
+		</tr>
+		</table>
+	</div>
+	<div class='boxcontrol3'>
+		<table class='t3'><tr><th align='center'>Follow Us on</th></tr>
+		<tr><td align='center'><br><a href="www.facebook.com" target="_blank"><img src="{% static 'css/fb.png' %}" alt="Facebook" height="42" width="42"/></a>
+		<a href="www.instagram.com" target="_blank"><img src="{% static 'css/in.png' %}" alt="Instagram" height="50" width="50"/></a>
+		<a href="www.twitter.com" target="_blank"><img src="{% static 'css/tw.png' %}" alt="Twitter" height="45" width="45"/></a>
+		<a href="www.gmail.com" target="_blank"><img src="{% static 'css/g.png' %}" alt="G+" height="45" width="45"/></a></td></tr></table>
+	</div>
+	<div class='boxcontrol4'>
+		<table class='t4'><tr><th align='center'>Copyright</th></tr>
+		<tr><td align='center'>
+		A--- & AA--- © 2018 -<br>
+		All Rights Reserved
+		<br> <br>
+		Powered & Designed by A-- & A----
+		</td></tr>
+		</table>
+	</div>
+</footer>
+</html>
