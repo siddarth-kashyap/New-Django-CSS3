@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+
+{% block content %}
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width initial-scale=1">
+	<meta name="keywords" content="IT Infrastructure, AWS, Virtualization, Consulting, Cloud Computing," />
+	<meta name="description" content="An IT Company who deals in IT INFRA, AWS Virtualization & Consulting." />
+	<meta http-equiv="cache-control" content="public" />
+	<title> Home</title>
+	<link rel="stylesheet" type="text/css" href="static/engine1/style.css" />
+	<link href='static/css/main.css' rel='stylesheet'>
+	<link rel="stylesheet" href="{% static 'css/base.css' %}">
+	<script type="text/javascript" src="static/engine1/jquery.js"></script>
+</head>
+<body>
+	<div id="wowslider-container1">
+		<div class="ws_images"><ul>
+		<li><img src="static/data1/images/it_infrastructure.jpg" alt="IT Infrastructure" title="IT Infrastructure" id="wows1_0"/></li>
+		<li><img src="static/data1/images/aws_virtualization.jpg" alt="AWS Virtualization" title="AWS Virtualization" id="wows1_1"/></li>
+		<li><img src="static/data1/images/consulting_and_more....jpg" alt="Consulting and more..." title="Consulting and more..." id="wows1_2"/></li>
+		</ul>
+		</div>
+		<div class="ws_script" style="position:absolute;left:-99%"></div>
+		<div class="ws_shadow"></div>
+	</div>
+<script type="text/javascript" src="static/engine1/wowslider.js"></script>
+<script type="text/javascript" src="static/engine1/script.js"></script>
+</body>
+</html>
+{% endblock %}

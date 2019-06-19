@@ -11,9 +11,11 @@ https://docs.djangoproject.com/en/2.1/ref/settings/
 """
 
 import os
+import os.path
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+#TEMPLATE_DIRS = ( os.path.join(os.path.dirname(__file__), '/Ward_Wattle/templates') .replace('\\','/'),)
 
 
 # Quick-start development settings - unsuitable for production
@@ -55,7 +57,8 @@ ROOT_URLCONF = 'Ward_Wattle.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [r'C:\Users\Sid\Desktop\website_project\Ward_Wattle\Ward_Wattle\templates'],
+        'DIRS': [os.path.join(BASE_DIR, 'templates')],
+        #r'C:\Users\Sid\Django\allprojects\website_project\Ward_Wattle\Ward_Wattle\templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -119,6 +122,6 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.1/howto/static-files/
 
 STATIC_URL = '/static/'
-STATICFILES_DIRS = [r'C:\Users\Sid\Desktop\website_project\Ward_Wattle\Ward_Wattle\static']
-
+#STATICFILES_DIRS = (os.path.join(os.path.dirname(__file__), 'static') .replace('\\','/'),)
+#STATICFILES_DIRS = [r'C:\Users\Sid\Django\allprojects\website_project\Ward_Wattle\Content\static']
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'

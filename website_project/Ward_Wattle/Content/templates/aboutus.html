@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+
+{% block content %}
+{% load static %}
+<html>
+<head>
+  <meta name="viewport" content="width=device-width initial-scale=1">
+  <link href='static/css/main.css' rel='stylesheet'>
+  <link rel="stylesheet" href="{% static 'css/base.css' %}">
+  <title> About us</title>
+</head>
+<body>
+	<section class="hero">
+    <div class="container">
+      <h2> About Us</h2>
+		    <div class="herocontent floatleft">
+        <i style='font-size:20px; align = right;'>
+          Define and Design your Desire
+        </i>
+		      <p>
+          This website is developed on the Django Framework and designed by
+          scratch on CSS3. There is no help taken from bootstrap. It is
+          purely coded on CSS3 line by line. </br>
+          It has a responsive layout for three main resolutions which are full-
+          large display (1200px or more), than medium resolution (768px or more)
+          and last for small resolution (320px or less).</br>
+          It comes with a carousel effect on the Home Page showing the services
+          provided by Company. It has a Contact Us module in which a client can
+          contact Company with their query or message and share his/her personal
+          details including E-mail ID.</br>
+          This Django Framework based website has been optimized & have quickest
+          load-time to represent any Company or Business to reach its audiences
+          out-there globally. </br>
+
+
+          </p>
+		    </div>
+    </div>
+	</section>
+</body>
+</html>
+{% endblock %}

@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+
+{% block content %}
+{% load static %}
+<html>
+<head>
+	<meta name="viewport" content="width=device-width initial-scale=1">
+	<link rel="stylesheet" href="{% static 'css/base.css' %}">
+	<link rel="icon" href="Ward_Wattle/static/css/icon.jpg" type="image/jpg/x-icon"/>
+	<title> Contact us</title>
+</head>
+<body>
+	<section class="hero">
+		<div class="container">
+		<h2> Contact Us</h2>
+		<div class="floatleft">
+        <form action ="" method ="post">
+          <fieldset>
+            <legend> Enter your details -- </legend>
+            {% csrf_token %}
+            {{form.as_p}}
+              <input type = "submit" value = "Submit" name="sub">
+          </fieldset>
+        </form>
+		</div>
+		</div>
+    <div class = "clear"></div>
+	</section>
+</body>
+</html>
+{% endblock %}
